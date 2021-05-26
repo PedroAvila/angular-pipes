@@ -15,4 +15,19 @@
             {{ (ventasNetas + 1000000) | number:'1.2-2' }}
         </p-card>
     </div>
+
+    <div class="p-col-4">
+        <p-card header="Ventas Brutas"
+            subheader="del presente año">
+            {{ (ventasNetas + 2000000) | currency:'CAD':'symbol-narrow':'1.4-4' }}
+        </p-card>
+    </div>
+
+    <div class="p-col-4">
+        <p-card header="Ganancia porcentual"
+            subheader="del presente año">
+            {{ porcentaje | percent:'2.2-2'}}
+        </p-card>
+    </div>
+
 </div>
