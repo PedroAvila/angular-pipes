@@ -57,6 +57,12 @@
     </div>
 
     <div class="p-col p-md-6">
+        <p-fieldset legend="Json Pipe" [toggleable]="true">
+            <pre>{{ heroes | json }}</pre>
+        </p-fieldset>
+    </div>
+
+    <div class="p-col p-md-6">
         <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
             <ul>
                 <li *ngFor="let item of persona | keyvalue">
@@ -66,5 +72,7 @@
 
         </p-fieldset>
     </div>
+
+    
 
 </div>
